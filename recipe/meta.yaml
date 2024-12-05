@@ -14,7 +14,7 @@ build:
     - mercury=mercury.mercury:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -32,7 +32,6 @@ requirements:
     - sqlalchemy ==1.4.27
     - gevent
     - nbconvert >=7.8.0
-    - ipython_genutils
     - django-cors-headers ==3.10.1
     - ipython ==7.30.1
     - ipykernel ==6.6.0
